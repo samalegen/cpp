@@ -1,10 +1,10 @@
 #include <string>
 using namespace std;
 
-class HartRates
+class HeartRates
 {
     public:
-        HartRates(string, string, int, int, int);
+        HeartRates(string, string, int, int, int);
         void setName(string);
         string getName();
         void setSurname(string);
@@ -17,7 +17,7 @@ class HartRates
         int getYear();
         int getAge();
         int getMaxHeartRate();
-        int getTargetHeartRate();
+        void getTargetHeartRate();
     private:
         string name;
         string surname;

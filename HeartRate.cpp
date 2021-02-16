@@ -54,11 +54,15 @@ int HeartRates::getAge()
 {
     return 2021-year;
 }
-int HeartRates::getMaxHartRate()
+int HeartRates::getMaxHeartRate()
 {
-    return 220 - getMaxHartRate();
+    return 220 - getAge();
 }
-int HeartRates::getTargetHeartRate()
+void HeartRates::getTargetHeartRate()
 {
+    int max, min;
+    max = getMaxHeartRate() * 0.85;
+    min = getMaxHeartRate() * 0.5;
+    cout << "Max = " <<max << " Min = " << min << endl;
 
 }

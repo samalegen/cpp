@@ -37,11 +37,11 @@ void HealthCare::setYear(int setyear)
 {
     year = setyear;
 }
-void setWeight(int setweight)
+void HealthCare::setWeight(int setweight)
 {
     weight = setweight;
 }
-void setHeight(int setheight)
+void HealthCare::setHeight(int setheight)
 {
     height = setheight;
 }
@@ -90,38 +90,40 @@ void HealthCare::getInfo()
     cout << "Weight:\t" << getWeight() << endl;
     if (BMI >30)
     {
-        cout << "BMI:\t" << BMI << "Very Fat" endl;
+        cout << "BMI:\t" << BMI << "Very Fat" << endl;
     }
     else if (BMI < 30 and BMI > 25)
     {
-        cout << "BMI:\t" << BMI << "Fat" endl;
+        cout << "BMI:\t" << BMI << "Fat" << endl;
     }
     else if (BMI < 25 and BMI > 18)
     {
-        cout << "BMI:\t" << BMI << "norma" endl;
+        cout << "BMI:\t" << BMI << "norma" << endl;
     }
     else
     {
-        cout << "BMI:\t" << BMI << "less" endl;
+        cout << "BMI:\t" << BMI << "less"<< endl;
     }
 }
 void HealthCare::setInfo()
 {
+    string name, surname, sex;
+    int day, month, year, weight, height;
     cout << "Enter name: " << endl;
-    cin >> setName(name);
+    cin >> (name); setName(name);
     cout << "Enter surmane: " << endl;
-    cin >> setSurname(surname);
+    cin >> (surname); setSurname(surname);
     cout << "Enter sex: " << endl;
-    cin >> setSex(sex);
+    cin >> (sex); setSex(sex);
     cout << "Enter day: " << endl;
-    cin >> setDay(day);
+    cin >> (day); setDay(day);
     cout << "Enter month: " << endl;
-    cin >> setMonth(month);
+    cin >> (month); setMonth(month);
     cout << "Enter year: " << endl;
-    cin >> setYear(year);
+    cin >> (year); setYear(year);
     cout << "Enter weight: " << endl;
-    cin >> setWeight(weight);
+    cin >> (weight); setWeight(weight);
     cout << "Enter height: " << endl;
-    cin >> setHeight(height);
+    cin >> (height); setHeight(height);
 
 }

@@ -15,7 +15,7 @@ public:
     int getDay();
     void setMonth(int);
     int getMonth();
-    void setyear(int);
+    void setYear(int);
     int getYear();
     void setWeight(int);
     int getWeight();

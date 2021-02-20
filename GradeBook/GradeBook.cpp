@@ -1,7 +1,7 @@
 #include <iostream>
 #include "GradeBook.h"
 
-using namespace std;
+using std::string, std::cout, std::cin, std::endl;
 
 GradeBook::GradeBook( string name, string autor )
 {

@@ -1,7 +1,7 @@
 //#include <iostream>
 #include <string>
 
-using namespace std;
+using std::string;
 
 class GradeBook
 {
@@ -12,6 +12,7 @@ class GradeBook
         void setAutor(string);
         string getAutor();
         void message();
+        void determineClassAverage();
     private:
         string courseName;
         string autorCourse;

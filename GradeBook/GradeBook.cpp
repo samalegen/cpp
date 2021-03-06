@@ -1,7 +1,7 @@
 #include <iostream>
 #include "GradeBook.h"
 
-using namespace std;
+using std::string, std::cout, std::cin, std::endl;
 
 GradeBook::GradeBook( string name, string autor )
 {
@@ -44,3 +44,23 @@ void GradeBook::message()
     cout << "Course name is " << getCourseName() << endl;
     cout << "Autor name is " << getAutor() << endl;
 }
+
+void GradeBook::determineClassAverage() {
+    int total;
+    int gradeCounter;
+    int grade;
+    int average;
+
+    total = 0;
+    gradeCounter = 1;
+
+    while (gradeCounter < 10) {
+        cout << "Enter Grade: ";
+        cin >> grade;
+        total += grade;
+        gradeCounter += 1;
+    }
+    average = total / 10;
+    cout << "Total = " <<  total << endl;
+    cout << "Average = " << average << endl;
+}   

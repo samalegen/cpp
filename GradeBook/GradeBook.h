@@ -12,6 +12,7 @@ class GradeBook
         void setAutor(string);
         string getAutor();
         void message();
+        void determineClassAverage();
     private:
         string courseName;
         string autorCourse;

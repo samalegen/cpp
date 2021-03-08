@@ -1,8 +1,7 @@
 #include <string>
 using namespace std;
 
-class HealthCare
-{
+class HealthCare {
 public:
     HealthCare(string, string, string, int, int, int, int, int);
     void setName(string);
